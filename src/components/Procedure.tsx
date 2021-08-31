@@ -1,13 +1,8 @@
 import * as React from "react";
 
-import {
-	AiOutlineCreditCard,
-	AiOutlineSelect,
-	AiOutlineShareAlt,
-} from "react-icons/ai";
+import { AiOutlineCreditCard, AiOutlineShareAlt } from "react-icons/ai";
 import {
 	Box,
-	Button,
 	Circle,
 	Flex,
 	Heading,

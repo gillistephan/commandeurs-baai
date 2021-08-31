@@ -5,7 +5,6 @@ import {
 	Flex,
 	Heading,
 	Image,
-	Stack,
 	Text,
 	Modal,
 	ModalOverlay,
@@ -24,6 +23,7 @@ export interface CardProps {
 	name: string;
 	url: string;
 	text: string;
+	readMore?: boolean;
 }
 
 const ReadMoreModal = (props: CardProps & Omit<ModalProps, "children">) => {
@@ -46,7 +46,7 @@ const ReadMoreModal = (props: CardProps & Omit<ModalProps, "children">) => {
 
 export const Card = (props: CardProps) => {
 	const disclosure = useDisclosure();
-	const { idx, name, url, text } = props;
+	const { idx, name, url, text, readMore } = props;
 
 	return (
 		<React.Fragment>
@@ -87,19 +87,21 @@ export const Card = (props: CardProps) => {
 					</Heading>
 					<Box my={6}>
 						<Box as={ImQuotesLeft} color="blue.500" fontSize="3xl" mb={3} />
-						<Text color="gray.600" minH="100px" noOfLines={4}>
+						<Text color="gray.600" minH="100px" noOfLines={5}>
 							{text}
 						</Text>
 
-						<Button
-							variant="link"
-							mt="4"
-							colorScheme="blue"
-							onClick={disclosure.onOpen}
-						>
-							Read more
-							<AiOutlineArrowRight style={{ marginLeft: "12px" }} />
-						</Button>
+						{readMore && (
+							<Button
+								variant="link"
+								mt="4"
+								colorScheme="blue"
+								onClick={disclosure.onOpen}
+							>
+								Read more
+								<AiOutlineArrowRight style={{ marginLeft: "12px" }} />
+							</Button>
+						)}
 					</Box>
 				</Flex>
 			</Box>

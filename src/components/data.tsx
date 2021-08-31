@@ -25,6 +25,7 @@ export const kayaker: Array<CardProps> = [
 		
 		We, people from small island states, are more than eager to push our individual and collective potentials, to the advantage to our ‘dushi’ Caribbean islands of Aruba and Curaçao, by performing
 		intergenerational and inspirational challenges.`,
+		readMore: true,
 	},
 	{
 		idx: 2,
@@ -37,11 +38,12 @@ export const kayaker: Array<CardProps> = [
 		url: "/kayaker_4.jpg",
 		name: "Anthony Guillermo",
 		text: "I only discovered nature 4 years ago, when I joined Ryan de Jongh in his  quest to conserve and to protect the Mangrove of Curacao.  Maybe the word 'respect' is better used. I did knew a lot about nature, and the way we as human we mistreathing nature, destroying it. I knew what we all, including me should not be doing in nature or towards nature, so that we could preserve that what we had. But it was not until I started hanging out with Ryan, when he took me on kayaking, that I truly began to understand out impact on nature. Now I am a fervent kayaker. who wants to use his ability to kayak long distances to draw attention to the cause of nature. September 4th I will be kayaking together with Ryan, Stefanie and two others kayakers form Aruba, departing form Playa Kalki Curacao, to Commandeursbaai Aruba. Our cause? The persvation of the mangroves in Aruba. Please donate to this cause.",
+		readMore: true,
 	},
 	{
 		idx: 4,
 		url: "/kayaker_5.jpg",
 		name: "Ryan De Jongh",
-		text: "Lorem Ipsum",
+		text: "Passion and Love for Nature (Conservation, Restoration, Education)... ARUBA / SAVANETAAAA, HERE WE COME! Please Donate!",
 	},
 ];

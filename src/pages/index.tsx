@@ -45,7 +45,7 @@ export const App = () => {
 					maxW="8xl"
 				>
 					{kayaker.map((item) => (
-						<Card {...item} />
+						<Card key={item.idx} {...item} />
 					))}
 				</SimpleGrid>
 			</Box>
