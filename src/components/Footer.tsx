@@ -35,8 +35,8 @@ export const Footer = () => {
 					textAlign={{ base: "center", md: "start" }}
 				>
 					<Text>
-						&copy; {new Date().getFullYear()} Foundation Commandeurs Baai & Ryan
-						De Jongh Charity Foundation | TBD | TBD
+						&copy; {new Date().getFullYear()} Ryan De Jongh Charity Foundation |
+						TBD | TBD
 					</Text>
 				</Stack>
 				<ButtonGroup marginStart={{ md: "auto" }} color="white" variant="ghost">

@@ -126,11 +126,7 @@ export const Logo = (props: HTMLChakraProps<"svg">) => (
 export const Ads = () => {
 	return (
 		<Box as="section" py={{ base: "12", md: "40" }}>
-			<Box
-				maxW={{ base: "xl", md: "7xl" }}
-				mx="auto"
-				px={{ base: "6", md: "8" }}
-			>
+			<Box maxW={{ md: "7xl" }} mx="auto" px={{ base: "8", lg: 0 }}>
 				<Heading
 					color="gray.700"
 					align="center"
@@ -141,11 +137,33 @@ export const Ads = () => {
 					Our Sponsors
 				</Heading>
 				<SimpleGrid
-					columns={{ base: 1, sm: 2, md: 3 }}
+					columns={{ base: 1, sm: 2, lg: 3 }}
 					mt="8"
 					spacing="6"
 					color="inherit"
 				>
+					<Center
+						py="2"
+						px="8"
+						rounded={{ md: "lg" }}
+						bg="gray.50"
+						as="a"
+						cursor="pointer"
+						href="https://childfirst-foundation.com/"
+					>
+						<Image src="/sponsor_4.png" h="6rem" />
+					</Center>
+					<Center
+						py="2"
+						px="8"
+						rounded={{ md: "lg" }}
+						bg="gray.50"
+						as="a"
+						cursor="pointer"
+						href="https://www.dejonghsports.com/"
+					>
+						<Image src="/sponsor_3.jpeg" h="6rem" />
+					</Center>
 					<Center
 						py="2"
 						px="8"

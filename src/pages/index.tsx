@@ -10,6 +10,8 @@ import {
 	Card,
 	Foundations,
 	kayaker,
+	boats,
+	BoatCard,
 } from "../components";
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 
@@ -49,7 +51,24 @@ export const App = () => {
 					))}
 				</SimpleGrid>
 			</Box>
-
+			<Box as="section" px={{ base: "6", md: "12" }} pt="16">
+				<Box maxW="7xl" mx="auto">
+					<Heading
+						size="xl"
+						mb="8"
+						fontWeight="extrabold"
+						color="gray.700"
+						textAlign="center"
+					>
+						Support Boats
+					</Heading>
+					<SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing="6">
+						{boats.map((boat, index) => (
+							<BoatCard {...boat} key={index} />
+						))}
+					</SimpleGrid>
+				</Box>
+			</Box>
 			<Ads />
 			<Footer />
 		</React.Fragment>

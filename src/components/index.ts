@@ -6,4 +6,5 @@ export * from "./Ads";
 export * from "./Call-To-Action";
 export * from "./Banner";
 export * from "./Hero";
+export * from "./Boats";
 export * from "./data";

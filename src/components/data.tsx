@@ -1,4 +1,20 @@
 import { CardProps } from "./Card";
+import { BoatCardProps } from "./Boats";
+
+export const boats: Array<BoatCardProps> = [
+	{
+		boatName: "TALIKA, A86",
+		skipper: ["Rudolf Anthony (Andy) Thijsen", "Christian Mejilla"],
+	},
+	{
+		boatName: "Zeerover, A2603",
+		skipper: ["Eric Bisslik", "Jerico (Jerry) V/d Linden", "Ronald Petriona"],
+	},
+	{
+		boatName: "Marisela, A303",
+		skipper: ["Roque de Weever", "Alex Kock"],
+	},
+];
 
 export const kayaker: Array<CardProps> = [
 	{
@@ -31,7 +47,7 @@ export const kayaker: Array<CardProps> = [
 		idx: 2,
 		name: "Stefanie (Nine) Ekert",
 		url: "/kayaker_3.jpg",
-		text: "Lorem Ipsum",
+		text: "During the last months I've learned a lot about the culture, the people and the nature of the Caribbean Islands, especially Aruba and Curacao. This crossing will be my first open ocean long distance kajak tour and therefore something very special to me! I dedicate this unforgettable experience to Passion and Love for Nature and the support of Commandeurs Baai Foundation, Ryan De Jongh Charity Foundation and Childfirst Foundation.",
 	},
 	{
 		idx: 3,
