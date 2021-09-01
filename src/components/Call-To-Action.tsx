@@ -20,7 +20,6 @@ import {
   Spinner,
   useDisclosure,
   Text,
-  Textarea,
 } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
