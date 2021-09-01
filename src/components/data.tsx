@@ -2,32 +2,28 @@ import { CardProps } from "./Card";
 import { BoatCardProps } from "./Boats";
 
 export const boats: Array<BoatCardProps> = [
-	{
-		boatName: "TALIKA, A86",
-		skipper: ["Rudolf Anthony (Andy) Thijsen", "Christian Mejilla"],
-	},
-	{
-		boatName: "Zeerover, A2603",
-		skipper: ["Eric Bisslik", "Jerico (Jerry) V/d Linden", "Ronald Petriona"],
-	},
-	{
-		boatName: "Marisela, A303",
-		skipper: ["Roque de Weever", "Alex Kock"],
-	},
+  {
+    boatName: "TALIKA, A86",
+    skipper: ["Rudolf Anthony (Andy) Thijsen", "Christian Mejilla"],
+  },
+  {
+    boatName: "Zeerover, A2603",
+    skipper: ["Eric Bisslik", "Jerico (Jerry) V/d Linden", "Ronald Petriona"],
+  },
 ];
 
 export const kayaker: Array<CardProps> = [
-	{
-		idx: 0,
-		name: "Angelo Kock ",
-		url: "/kayaker_1.jpg",
-		text: "Lorem Ipsum",
-	},
-	{
-		idx: 1,
-		name: "Luis Wever",
-		url: "/kayaker_2.jpg",
-		text: `From a young age as an ‘Arubiano’, I grew up sharing with and caring for our sister island of Curaçao/Corsou, via renowned Aruban swimmer, Roly Bisslik’s ‘Aruba Dolphins Swimming Club,’ sharing the sport with brothers from ‘De Dolfijnen’ en also with ‘Sithoc,’ both from Curaçao. Later with the late renowned Aruban tennis coach, Eddy Ras with brothers and sisters from SOV Asiento of Curaçao and the T.I.H.T.A. international tennis tournament on Aruba. During a total of 17,5 years living in the Netherlands, the love for Curaçao as an ‘Arubiano’ grew considerably knowing, meeting, sharing live and love with brothers and sisters from Curaçao. We remember, the University of Groningen, the streets of Groningen, De Zolder, Troubadour, Rumba,
+  {
+    idx: 0,
+    name: "Angelo Kock ",
+    url: "/kayaker_1.jpeg",
+    text: "Lorem Ipsum",
+  },
+  {
+    idx: 1,
+    name: "Luis Wever",
+    url: "/kayaker_2.jpg",
+    text: `From a young age as an ‘Arubiano’, I grew up sharing with and caring for our sister island of Curaçao/Corsou, via renowned Aruban swimmer, Roly Bisslik’s ‘Aruba Dolphins Swimming Club,’ sharing the sport with brothers from ‘De Dolfijnen’ en also with ‘Sithoc,’ both from Curaçao. Later with the late renowned Aruban tennis coach, Eddy Ras with brothers and sisters from SOV Asiento of Curaçao and the T.I.H.T.A. international tennis tournament on Aruba. During a total of 17,5 years living in the Netherlands, the love for Curaçao as an ‘Arubiano’ grew considerably knowing, meeting, sharing live and love with brothers and sisters from Curaçao. We remember, the University of Groningen, the streets of Groningen, De Zolder, Troubadour, Rumba,
 		IKEA, De Drie Gezusters, The Glory and De Oosterpoort (all in Groningen), Uilenstede, Easy Times,
 		Caprice, Heineken Music Hall and Pepsi Stage (all the last in Amsterdam), and Masjid Al-Oemmah (Den Haag), which were venues where the halls and walls have many bridge building stories to tell, between me as an ‘Arubiano’ and and the ‘Yiu di Corsou.’ Speaking your native tongue in another
 		country makes people feel at home.
@@ -41,25 +37,26 @@ export const kayaker: Array<CardProps> = [
 		
 		We, people from small island states, are more than eager to push our individual and collective potentials, to the advantage to our ‘dushi’ Caribbean islands of Aruba and Curaçao, by performing
 		intergenerational and inspirational challenges.`,
-		readMore: true,
-	},
-	{
-		idx: 2,
-		name: "Stefanie (Nine) Ekert",
-		url: "/kayaker_3.jpg",
-		text: "During the last months I've learned a lot about the culture, the people and the nature of the Caribbean Islands, especially Aruba and Curacao. This crossing will be my first open ocean long distance kajak tour and therefore something very special to me! I dedicate this unforgettable experience to Passion and Love for Nature and the support of Commandeurs Baai Foundation, Ryan De Jongh Charity Foundation and Childfirst Foundation.",
-	},
-	{
-		idx: 3,
-		url: "/kayaker_4.jpg",
-		name: "Anthony Guillermo",
-		text: "I only discovered nature 4 years ago, when I joined Ryan de Jongh in his  quest to conserve and to protect the Mangrove of Curacao.  Maybe the word 'respect' is better used. I did knew a lot about nature, and the way we as human we mistreathing nature, destroying it. I knew what we all, including me should not be doing in nature or towards nature, so that we could preserve that what we had. But it was not until I started hanging out with Ryan, when he took me on kayaking, that I truly began to understand out impact on nature. Now I am a fervent kayaker. who wants to use his ability to kayak long distances to draw attention to the cause of nature. September 4th I will be kayaking together with Ryan, Stefanie and two others kayakers form Aruba, departing form Playa Kalki Curacao, to Commandeursbaai Aruba. Our cause? The persvation of the mangroves in Aruba. Please donate to this cause.",
-		readMore: true,
-	},
-	{
-		idx: 4,
-		url: "/kayaker_5.jpg",
-		name: "Ryan De Jongh",
-		text: "Passion and Love for Nature (Conservation, Restoration, Education)... ARUBA / SAVANETAAAA, HERE WE COME! Please Donate!",
-	},
+    readMore: true,
+  },
+  {
+    idx: 2,
+    name: "Stefanie (Nine) Ekert",
+    url: "/kayaker_3.jpg",
+    text: "During the last months I've learned a lot about the culture, the people and the nature of the Caribbean Islands, especially Aruba and Curacao. This crossing will be my first open ocean long distance kajak tour and therefore something very special to me! I dedicate this unforgettable experience to Passion and Love for Nature and the support of Commandeurs Baai Foundation, Ryan De Jongh Charity Foundation and Childfirst Foundation.",
+    readMore: true,
+  },
+  {
+    idx: 3,
+    url: "/kayaker_4.jpg",
+    name: "Anthony Guillermo",
+    text: "I only discovered nature 4 years ago, when I joined Ryan de Jongh in his  quest to conserve and to protect the Mangrove of Curacao.  Maybe the word 'respect' is better used. I did knew a lot about nature, and the way we as human we mistreathing nature, destroying it. I knew what we all, including me should not be doing in nature or towards nature, so that we could preserve that what we had. But it was not until I started hanging out with Ryan, when he took me on kayaking, that I truly began to understand out impact on nature. Now I am a fervent kayaker. who wants to use his ability to kayak long distances to draw attention to the cause of nature. September 4th I will be kayaking together with Ryan, Stefanie and two others kayakers form Aruba, departing form Playa Kalki Curacao, to Commandeursbaai Aruba. Our cause? The persvation of the mangroves in Aruba. Please donate to this cause.",
+    readMore: true,
+  },
+  {
+    idx: 4,
+    url: "/kayaker_5.jpg",
+    name: "Ryan De Jongh",
+    text: "Passion and Love for Nature (Conservation, Restoration, Education)... ARUBA / SAVANETAAAA, HERE WE COME! Please Donate!",
+  },
 ];
