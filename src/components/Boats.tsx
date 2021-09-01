@@ -16,7 +16,7 @@ export const BoatCard = (props: BoatCardProps) => {
         <Text fontSize="xl" fontWeight="bold" textTransform="uppercase" letterSpacing="wide" color="blue.500">
           {boatName}
         </Text>
-        <Image height="350px" src={url} alt={`boat-${boatName}`} my="4" />
+        <Image height="350px" src={url} alt={`boat-${boatName}`} my="4" objectFit="contain" />
         <Text as="span" color="gray.800" fontSize="lg" lineHeight="1" textAlign="center" mt="8">
           {skipper.join(", ")}
         </Text>

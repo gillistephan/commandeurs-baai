@@ -113,7 +113,6 @@ export const CallToAction = () => {
           onClose();
           setState(emptyState);
         }}
-        isCentered
         size="xl"
         closeOnEsc={!submitState.isLoading}
         closeOnOverlayClick={!submitState.isLoading}
@@ -140,123 +139,113 @@ export const CallToAction = () => {
           </Box>
           <ModalHeader>Support us now!</ModalHeader>
           <ModalCloseButton />
-          <form
-            onSubmit={(event) => {
-              event.preventDefault();
-              onSubmit();
-            }}
-          >
-            <ModalBody pb={6}>
-              {submitState.error && (
-                <Alert mt={4} status="error" rounded="md">
-                  <AlertIcon />
-                  {submitState.errorMessage}
-                </Alert>
-              )}
-              {submitState.success && (
-                <Alert mt={4} status="success" rounded="md">
-                  <AlertIcon />
-                  You are an official supporter. We will contact you soon!
-                </Alert>
-              )}
-              <FormControl mt={4}>
-                <FormLabel color="blue.500">Your name</FormLabel>
+          <Box w="full" px="4">
+            {submitState.error && (
+              <Alert mt={4} status="error" rounded="md">
+                <AlertIcon />
+                {submitState.errorMessage}
+              </Alert>
+            )}
+            {submitState.success && (
+              <Alert mt={4} status="success" rounded="md">
+                <AlertIcon />
+                You are an official supporter. We will contact you soon!
+              </Alert>
+            )}
+          </Box>
+          <ModalBody pb={6}>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500">Your name</FormLabel>
+              <Input focusBorderColor="yellow.300" value={state.name} required onChange={(event) => onChange("name", event.target.value)} />
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500">E-Mail</FormLabel>
+              <InputGroup>
+                <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<AiOutlineMail />} />
                 <Input
-                  focusBorderColor="yellow.300"
-                  value={state.name}
+                  placeholder="mail@mail.com"
+                  type="email"
                   required
-                  onChange={(event) => onChange("name", event.target.value)}
-                />
-              </FormControl>
-              <FormControl mt={4}>
-                <FormLabel color="blue.500">E-Mail</FormLabel>
-                <InputGroup>
-                  <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<AiOutlineMail />} />
-                  <Input
-                    placeholder="mail@mail.com"
-                    type="email"
-                    required
-                    focusBorderColor="yellow.300"
-                    value={state.email}
-                    onChange={(event) => onChange("email", event.target.value)}
-                  />
-                </InputGroup>
-              </FormControl>
-              <FormControl mt={4}>
-                <FormLabel color="blue.500" display="flex">
-                  Phone{" "}
-                  <Text color="gray.500" fontSize="sm" ml="4">
-                    (optional)
-                  </Text>
-                </FormLabel>
-                <InputGroup>
-                  <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<AiOutlinePhone />} />
-                  <Input
-                    placeholder="+123456789"
-                    type="text"
-                    focusBorderColor="yellow.300"
-                    value={state.phone}
-                    onChange={(event) => onChange("phone", event.target.value)}
-                  />
-                </InputGroup>
-              </FormControl>
-              <FormControl mt={4}>
-                <FormLabel color="blue.500" display="flex">
-                  Instagram{" "}
-                  <Text color="gray.500" fontSize="sm" ml="4">
-                    (optional)
-                  </Text>
-                </FormLabel>
-                <InputGroup>
-                  <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<FaInstagram />} />
-                  <Input
-                    type="text"
-                    focusBorderColor="yellow.300"
-                    value={state.instagram}
-                    onChange={(event) => onChange("instagram", event.target.value)}
-                  />
-                </InputGroup>
-              </FormControl>
-              <FormControl mt={4}>
-                <FormLabel color="blue.500" display="flex">
-                  Facebook
-                  <Text color="gray.500" fontSize="sm" ml="4">
-                    (optional)
-                  </Text>
-                </FormLabel>
-                <InputGroup>
-                  <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<FaFacebook />} />
-                  <Input
-                    type="text"
-                    focusBorderColor="yellow.300"
-                    value={state.facebook}
-                    onChange={(event) => onChange("facebook", event.target.value)}
-                  />
-                </InputGroup>
-              </FormControl>
-              <FormControl mt={4}>
-                <FormLabel color="blue.500" display="flex">
-                  Notes
-                  <Text color="gray.500" fontSize="sm" ml="4">
-                    (optional)
-                  </Text>
-                </FormLabel>
-
-                <Textarea
-                  placeholder="Leave us a not if you want..."
                   focusBorderColor="yellow.300"
-                  value={state.notes}
-                  onChange={(event) => onChange("notes", event.target.value)}
+                  value={state.email}
+                  onChange={(event) => onChange("email", event.target.value)}
                 />
-              </FormControl>
-            </ModalBody>
-            <ModalFooter>
-              <Button colorScheme="blue" mr={3} disabled={!isValid} type="submit">
-                Save
-              </Button>
-              <Button onClick={onClose}>Cancel</Button>
-            </ModalFooter>
-          </form>
+              </InputGroup>
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500" display="flex">
+                Phone{" "}
+                <Text color="gray.500" fontSize="sm" ml="4">
+                  (optional)
+                </Text>
+              </FormLabel>
+              <InputGroup>
+                <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<AiOutlinePhone />} />
+                <Input
+                  placeholder="+123456789"
+                  type="text"
+                  focusBorderColor="yellow.300"
+                  value={state.phone}
+                  onChange={(event) => onChange("phone", event.target.value)}
+                />
+              </InputGroup>
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500" display="flex">
+                Instagram{" "}
+                <Text color="gray.500" fontSize="sm" ml="4">
+                  (optional)
+                </Text>
+              </FormLabel>
+              <InputGroup>
+                <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<FaInstagram />} />
+                <Input
+                  type="text"
+                  focusBorderColor="yellow.300"
+                  value={state.instagram}
+                  onChange={(event) => onChange("instagram", event.target.value)}
+                />
+              </InputGroup>
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500" display="flex">
+                Facebook
+                <Text color="gray.500" fontSize="sm" ml="4">
+                  (optional)
+                </Text>
+              </FormLabel>
+              <InputGroup>
+                <InputLeftElement pointerEvents="none" color="gray.300" fontSize="1.2em" children={<FaFacebook />} />
+                <Input
+                  type="text"
+                  focusBorderColor="yellow.300"
+                  value={state.facebook}
+                  onChange={(event) => onChange("facebook", event.target.value)}
+                />
+              </InputGroup>
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel color="blue.500" display="flex">
+                Notes
+                <Text color="gray.500" fontSize="sm" ml="4">
+                  (optional)
+                </Text>
+              </FormLabel>
+
+              <Textarea
+                placeholder="Leave us a not if you want..."
+                focusBorderColor="yellow.300"
+                value={state.notes}
+                onChange={(event) => onChange("notes", event.target.value)}
+              />
+            </FormControl>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} disabled={!isValid} type="button" onClick={onSubmit}>
+              Save
+            </Button>
+            <Button onClick={onClose}>Cancel</Button>
+          </ModalFooter>
         </ModalContent>
       </Modal>
       <Box as="section" bg="blue.500">

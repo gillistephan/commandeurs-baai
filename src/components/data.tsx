@@ -5,12 +5,12 @@ export const boats: Array<BoatCardProps> = [
   {
     boatName: "TALIKA, A86",
     skipper: ["Rudolf Anthony (Andy) Thijsen", "Christian Mejilla"],
-    url: "/boat_1.jpeg",
+    url: "/boat_2.jpeg",
   },
   {
     boatName: "Zeerover, A2603",
     skipper: ["Eric Bisslik", "Jerico (Jerry) V/d Linden", "Ronald Petriona"],
-    url: "/boat_2.jpeg",
+    url: "/boat_1.jpeg",
   },
 ];
 
