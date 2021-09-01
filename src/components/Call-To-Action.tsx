@@ -117,6 +117,7 @@ export const CallToAction = () => {
         size="xl"
         closeOnEsc={!submitState.isLoading}
         closeOnOverlayClick={!submitState.isLoading}
+        scrollBehavior="inside"
       >
         <ModalOverlay />
         <ModalContent>

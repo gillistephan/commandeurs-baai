@@ -126,7 +126,7 @@ export const Ads = () => {
           <Center py="2" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://www.dejonghsports.com/">
             <Image src="/sponsor_3.jpeg" h="6rem" />
           </Center>
-          <Center py="2" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://serenebythesea.com/">
+          <Center py="2" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://facebook.com/zeerovers">
             <Image src="/sponsor_2.jpeg" h="6rem" />
           </Center>
           <Center py="8" px="8" bg="gray.50" rounded={{ md: "lg" }} cursor="pointer" as="a" href="https://theone.lifevantage.com/">

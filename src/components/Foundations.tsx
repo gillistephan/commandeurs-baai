@@ -12,7 +12,7 @@ export const Foundations = () => (
         <Text fontSize="lg" color="gray.700">
           The aim of the Fundacion Proteccion y Conservacion di Commandeurs Baai is to protect and conserve the heritage of the
           neighbourhoods Savaneta, Brazil and Pos Chiquito. We defend and protect the coast and the ocean in the area of Commandeurs Baai as
-          well as the mangroves from Spanish Lagoon all the way up to Zeesicht.
+          well as the mangroves from Spanish Lagoon all the way up to Zeewijk.
         </Text>
       </Stack>
       <Stack direction="column" flex="1">

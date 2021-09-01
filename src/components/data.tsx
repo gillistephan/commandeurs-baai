@@ -5,10 +5,12 @@ export const boats: Array<BoatCardProps> = [
   {
     boatName: "TALIKA, A86",
     skipper: ["Rudolf Anthony (Andy) Thijsen", "Christian Mejilla"],
+    url: "/boat_1.jpeg",
   },
   {
     boatName: "Zeerover, A2603",
     skipper: ["Eric Bisslik", "Jerico (Jerry) V/d Linden", "Ronald Petriona"],
+    url: "/boat_2.jpeg",
   },
 ];
 
@@ -17,7 +19,11 @@ export const kayaker: Array<CardProps> = [
     idx: 0,
     name: "Angelo Kock ",
     url: "/kayaker_1.jpeg",
-    text: "Lorem Ipsum",
+    text: `I grew up in the neighbourhood of Savaneta and have been swimming in the Commandeurs Baai since I was a child. From an early age on I knew how to enjoy nature and it's tranquility. What better place then Savaneta to do so.
+    Kayaking is one of my favorite hobbies. This is how the challenges began for me: In 2018 I accompanied 5 local swimmers (Davy Bisslik, Stephan Thijsen, Romar Arendsz, Deaxo Croes and Wendy Kock-Croes) from Venezuela to Aruba. After that, in 2021 I accompanied Deaxo Croes from Bonaire to Aruba and last August I  joined Ryan De Jongh and Stefanie Ekert for a kayak trip around Aruba and also Deaxo from Bonaire to Curacao.
+    
+    I am someone who likes to challenge myself. I dedicate this challenging journey to show the love that I have for Savaneta and most importantly to bring awareness to the conservation of nature and especially Commandeurs Baai!`,
+    readMore: true,
   },
   {
     idx: 1,
