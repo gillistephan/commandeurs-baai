@@ -224,21 +224,6 @@ export const CallToAction = () => {
                 />
               </InputGroup>
             </FormControl>
-            <FormControl mt={4}>
-              <FormLabel color="blue.500" display="flex">
-                Notes
-                <Text color="gray.500" fontSize="sm" ml="4">
-                  (optional)
-                </Text>
-              </FormLabel>
-
-              <Textarea
-                placeholder="Leave us a not if you want..."
-                focusBorderColor="yellow.300"
-                value={state.notes}
-                onChange={(event) => onChange("notes", event.target.value)}
-              />
-            </FormControl>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} disabled={!isValid} type="button" onClick={onSubmit}>
