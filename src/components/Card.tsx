@@ -64,7 +64,7 @@ export const Card = (props: CardProps) => {
           </Heading>
           <Box my={6}>
             <Box as={ImQuotesLeft} color="blue.500" fontSize="3xl" mb={3} />
-            <Text color="gray.600" minH="100px" noOfLines={4}>
+            <Text color="gray.600" minH="100px" noOfLines={5}>
               {text}
             </Text>
 
