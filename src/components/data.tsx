@@ -60,6 +60,6 @@ export const kayaker: Array<CardProps> = [
     idx: 4,
     url: "/kayaker_5.jpg",
     name: "Ryan De Jongh",
-    text: "Passion and Love for Nature (Conservation, Restoration, Education)... ARUBA / SAVANETAAAA, HERE WE COME! Please Donate!",
+    text: "Passion and Love for Nature (Conservation, Restoration, Education)... ARUBA / SAVANETAAAA, HERE WE COME! Please feel free to donate.",
   },
 ];
