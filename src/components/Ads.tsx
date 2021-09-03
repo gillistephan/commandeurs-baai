@@ -149,6 +149,9 @@ export const Ads = () => {
           >
             <Image src="/sponsor_6.png" h="4rem" />
           </Center>
+          <Center py="8" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://www.flyingfishbone.com/">
+            <Image src="/sponsor_7.jpeg" h="4rem" />
+          </Center>
         </SimpleGrid>
       </Box>
     </Box>
