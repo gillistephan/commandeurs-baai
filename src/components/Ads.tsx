@@ -135,6 +135,20 @@ export const Ads = () => {
           <Center py="8" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://serenebythesea.com/">
             <Image src="/sponsor_1.webp" h="4rem" />
           </Center>
+          <Center py="8" px="8" rounded={{ md: "lg" }} bg="gray.50" as="a" cursor="pointer" href="https://www.ddcarrental.com/">
+            <Image src="/sponsor_5.jpeg" h="4rem" />
+          </Center>
+          <Center
+            py="8"
+            px="8"
+            rounded={{ md: "lg" }}
+            bg="gray.50"
+            as="a"
+            cursor="pointer"
+            href="https://www.facebook.com/customprintingcuracao/"
+          >
+            <Image src="/sponsor_6.png" h="4rem" />
+          </Center>
         </SimpleGrid>
       </Box>
     </Box>

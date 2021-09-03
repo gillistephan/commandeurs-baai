@@ -17,7 +17,7 @@ export const Hero = () => (
             4th of September 2021{" "}
           </Text>{" "}
           we are going to cross from Curaçao to Aruba by kayak. We will start at Playa Kalki, west point of Curaçao, in the early morning
-          hours and plan to arrive at Serene By The Sea Resort at sunset.
+          hours and plan to arrive at Serene By The Sea Resort at the afternoon.
         </Text>
         <Text mt={4} fontSize="xl" fontWeight="bold" color="blue.500">
           Goal: Afl. 27.548 / US$ 15.742
